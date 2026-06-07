@@ -58,18 +58,14 @@ const countdown = setInterval(() => {
 
     if (distance < 0) {
 
-        document.getElementById("countdown-grid").innerHTML =
-            "<h2 style='color:#f4a949'>● LIVE</h2>";
+        document.getElementById("countdown").innerHTML =
+         "● LIVE";
 
         clearInterval(countdown);
 
     } else {
-
-        document.getElementById("days").textContent = days;
-        document.getElementById("hours").textContent = hours;
-        document.getElementById("minutes").textContent = minutes;
-        document.getElementById("seconds").textContent = seconds;
-
+        document.getElementById("countdown").innerHTML =
+         timer;
     }
 
 }, 1000);
