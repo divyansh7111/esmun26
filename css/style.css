@@ -261,26 +261,6 @@ body {
 }
 
 /* =========================
-   Countdown
-========================= */
-
-.countdown-section {
-    padding: 6rem 8%;
-    text-align: center;
-}
-
-.countdown-section h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-#countdown {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--orange);
-}
-
-/* =========================
    Footer
 ========================= */
 
@@ -387,6 +367,8 @@ body::before {
     text-align: center;
 
     padding: 0 8%;
+
+    margin-bottom: 2rem;
 }
 
 .page-hero h1 {
@@ -409,63 +391,51 @@ body::before {
 
 .register-options {
 
-```
-padding: 0 8% 6rem;
+    padding: 0 8% 6rem;
 
-display: flex;
+    display: flex;
 
-justify-content: center;
+    justify-content: center;
 
-flex-wrap: wrap;
+    flex-wrap: wrap;
 
-gap: 2rem;
-```
-
+    gap: 2rem;
 }
 
 .register-card,
 .contact-card {
 
-```
-width: 320px;
+    width: 320px;
 
-background: rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.05);
 
-padding: 2rem;
+    padding: 2rem;
 
-border-radius: 20px;
+    border-radius: 20px;
 
-text-align: center;
-```
-
+    text-align: center;
 }
 
 .register-card a {
 
-```
-display: inline-block;
+    display: inline-block;
 
-margin-top: 1rem;
+    margin-top: 1rem;
 
-text-decoration: none;
+    text-decoration: none;
 
-color: var(--orange);
-```
-
+    color: var(--orange);
 }
 
 .contact-section {
 
-```
-padding: 0 8% 6rem;
+    padding: 0 8% 6rem;
 
-display: flex;
+    display: flex;
 
-justify-content: center;
+    justify-content: center;
 
-flex-wrap: wrap;
+    flex-wrap: wrap;
 
-gap: 2rem;
-```
-
+    gap: 2rem;
 }
