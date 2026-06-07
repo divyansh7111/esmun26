@@ -31,6 +31,16 @@ const countdown = setInterval(() => {
 
     const distance = eventDate - now;
 
+    if (distance < 0) {
+
+        document.getElementById("countdown").innerHTML =
+        "● LIVE";
+
+        clearInterval(countdown);
+
+        return;
+    }
+
     const days = Math.floor(
         distance / (1000 * 60 * 60 * 24)
     );
@@ -50,22 +60,7 @@ const countdown = setInterval(() => {
         / 1000
     );
 
-    const timer =
-        `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-    const countdownElement =
-        document.getElementById("countdown");
-
-    if (distance < 0) {
-
-        document.getElementById("countdown").innerHTML =
-         "● LIVE";
-
-        clearInterval(countdown);
-
-    } else {
-        document.getElementById("countdown").innerHTML =
-         timer;
-    }
+    document.getElementById("countdown").innerHTML =
+    `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
 }, 1000);
