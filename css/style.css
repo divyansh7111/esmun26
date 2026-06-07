@@ -409,47 +409,63 @@ body::before {
 
 .register-options {
 
-    padding: 0 8% 6rem;
+```
+padding: 0 8% 6rem;
 
-    display: grid;
+display: flex;
 
-    grid-template-columns:
-        repeat(auto-fit,minmax(320px,1fr));
+justify-content: center;
 
-    gap: 2rem;
+flex-wrap: wrap;
+
+gap: 2rem;
+```
+
 }
 
 .register-card,
 .contact-card {
 
-    background: rgba(255,255,255,0.05);
+```
+width: 320px;
 
-    padding: 2rem;
+background: rgba(255,255,255,0.05);
 
-    border-radius: 20px;
+padding: 2rem;
 
-    text-align: center;
+border-radius: 20px;
+
+text-align: center;
+```
+
 }
 
 .register-card a {
 
-    display: inline-block;
+```
+display: inline-block;
 
-    margin-top: 1rem;
+margin-top: 1rem;
 
-    text-decoration: none;
+text-decoration: none;
 
-    color: var(--orange);
+color: var(--orange);
+```
+
 }
 
 .contact-section {
 
-    padding: 0 8% 6rem;
+```
+padding: 0 8% 6rem;
 
-    display: grid;
+display: flex;
 
-    grid-template-columns:
-        repeat(auto-fit,minmax(250px,1fr));
+justify-content: center;
 
-    gap: 2rem;
+flex-wrap: wrap;
+
+gap: 2rem;
+```
+
 }
