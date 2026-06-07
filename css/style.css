@@ -315,3 +315,179 @@ footer {
         display: none;
     }
 }
+/* Blueprint Grid */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+/* Countdown Cards */
+
+#countdown-grid {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+}
+
+.time-card {
+
+    width: 140px;
+
+    padding: 1.5rem;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: .3s;
+}
+
+.time-card:hover {
+
+    transform: translateY(-5px);
+}
+
+.time-card span {
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    color: var(--orange);
+}
+
+.time-card p {
+
+    margin-top: .5rem;
+
+    letter-spacing: 2px;
+
+    font-size: .8rem;
+}
+
+/* About */
+
+.about-preview {
+
+    padding: 6rem 8%;
+
+    text-align: center;
+}
+
+.about-preview h2 {
+
+    margin-bottom: 1.5rem;
+
+    font-size: 2.5rem;
+}
+
+.about-preview p {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: var(--text);
+}
+
+/* Theme */
+
+.theme-section {
+
+    padding: 6rem 8%;
+
+    text-align: center;
+}
+
+.theme-section h2 {
+
+    font-size: 2.5rem;
+
+    color: var(--orange);
+
+    margin-bottom: 1.5rem;
+}
+
+.theme-section p {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: var(--text);
+}
+
+/* Quick Links */
+
+.quick-links {
+
+    padding: 5rem 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 1.5rem;
+}
+
+.quick-links a {
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255,255,255,0.05);
+
+    padding: 2rem;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.quick-links a:hover {
+
+    transform: translateY(-6px);
+
+    border: 1px solid var(--orange);
+}
