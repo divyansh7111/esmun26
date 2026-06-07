@@ -58,15 +58,17 @@ const countdown = setInterval(() => {
 
     if (distance < 0) {
 
-        countdownElement.innerHTML =
-            "🔴 LIVE";
+        document.getElementById("countdown-grid").innerHTML =
+            "<h2 style='color:#f4a949'>● LIVE</h2>";
 
         clearInterval(countdown);
 
     } else {
 
-        countdownElement.innerHTML =
-            timer;
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
 
     }
 
