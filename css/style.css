@@ -52,7 +52,15 @@ body {
 }
 
 .splash-logo {
-    width: 180px;
+
+    width: 240px;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
     margin-bottom: 2rem;
 }
 
@@ -104,7 +112,14 @@ body {
 }
 
 .logo-container img {
-    width: 42px;
+
+    width: 58px;
+
+    height: 58px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
 }
 
 .logo-container span {
