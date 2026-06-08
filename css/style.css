@@ -439,3 +439,84 @@ body::before {
 
     gap: 2rem;
 }
+/* =========================
+   Network Sphere
+========================= */
+
+.network-sphere {
+
+    position: relative;
+
+    width: 360px;
+
+    height: 360px;
+
+    animation: floatOrb 6s ease-in-out infinite;
+}
+
+.node {
+
+    position: absolute;
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    box-shadow: 0 0 15px rgba(244,169,73,.8);
+}
+
+.n1 { top: 20%; left: 50%; }
+.n2 { top: 40%; left: 20%; }
+.n3 { top: 40%; right: 20%; }
+.n4 { bottom: 20%; left: 50%; }
+.n5 { top: 65%; left: 30%; }
+.n6 { top: 65%; right: 30%; }
+
+.line {
+
+    position: absolute;
+
+    height: 2px;
+
+    background: rgba(255,255,255,.25);
+
+    transform-origin: left center;
+}
+
+.l1 {
+    width: 120px;
+    top: 24%;
+    left: 28%;
+    transform: rotate(30deg);
+}
+
+.l2 {
+    width: 120px;
+    top: 24%;
+    left: 50%;
+    transform: rotate(150deg);
+}
+
+.l3 {
+    width: 140px;
+    top: 45%;
+    left: 23%;
+    transform: rotate(15deg);
+}
+
+.l4 {
+    width: 140px;
+    top: 45%;
+    left: 47%;
+    transform: rotate(165deg);
+}
+
+.l5 {
+    width: 90px;
+    top: 68%;
+    left: 38%;
+}
