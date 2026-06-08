@@ -222,9 +222,16 @@ body {
 ========================= */
 
 .hero-graphic {
+
+    flex: 1;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
+    min-width: 400px;
 }
 
 .orb {
@@ -451,6 +458,12 @@ body::before {
 
     height: 360px;
 
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
     animation: floatOrb 6s ease-in-out infinite;
 }
 
@@ -458,18 +471,22 @@ body::before {
 
     position: absolute;
 
-    inset: 0;
+    width: 320px;
+
+    height: 320px;
 
     border-radius: 50%;
 
     background:
         radial-gradient(
             circle,
-            rgba(45,95,255,0.95),
-            rgba(45,95,255,0.15)
+            rgba(45,95,255,0.95) 0%,
+            rgba(45,95,255,0.55) 50%,
+            rgba(45,95,255,0.05) 100%
         );
 
-    filter: blur(8px);
+    box-shadow:
+        0 0 80px rgba(45,95,255,0.45);
 }
 
 .orb-ring {
