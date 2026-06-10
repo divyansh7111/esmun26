@@ -674,3 +674,167 @@ body::before {
         display: none;
     }
 }
+/* =========================
+Committees
+========================= */
+
+.committees-container {
+
+```
+width: 100%;
+
+padding: 0 8% 6rem;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+gap: 2rem;
+```
+
+}
+
+.committee-card {
+
+```
+width: min(100%, 950px);
+
+background: rgba(255,255,255,0.05);
+
+border: 1px solid rgba(255,255,255,0.08);
+
+border-radius: 24px;
+
+padding: 2rem;
+
+transition: all .3s ease;
+
+backdrop-filter: blur(10px);
+```
+
+}
+
+.committee-card:hover {
+
+```
+transform: translateY(-6px);
+
+border-color: var(--orange);
+
+box-shadow:
+    0 0 25px rgba(244,169,73,0.12);
+```
+
+}
+
+.committee-card h2 {
+
+```
+font-family: 'Space Grotesk', sans-serif;
+
+font-size: 2rem;
+
+color: var(--orange);
+
+margin-bottom: .4rem;
+```
+
+}
+
+.committee-card h3 {
+
+```
+font-size: 1rem;
+
+color: var(--text);
+
+font-weight: 500;
+
+margin-bottom: 1.5rem;
+```
+
+}
+
+.committee-label {
+
+```
+display: inline-block;
+
+margin-bottom: 1rem;
+
+padding: .35rem .8rem;
+
+border-radius: 999px;
+
+background: rgba(244,169,73,0.15);
+
+color: var(--orange);
+
+font-size: .85rem;
+
+letter-spacing: 1px;
+```
+
+}
+
+.committee-card p {
+
+```
+line-height: 1.9;
+
+color: var(--text);
+```
+
+}
+
+.freeze-badge {
+
+```
+margin-top: 1.5rem;
+
+display: inline-block;
+
+padding: .6rem 1rem;
+
+border-radius: 999px;
+
+background: rgba(255,255,255,0.08);
+
+color: var(--white);
+
+font-size: .9rem;
+```
+
+}
+
+.ip-tags {
+
+```
+margin-top: 1.5rem;
+
+display: flex;
+
+gap: 1rem;
+
+flex-wrap: wrap;
+```
+
+}
+
+.ip-tags span {
+
+```
+padding: .5rem .9rem;
+
+border-radius: 999px;
+
+background: rgba(255,255,255,0.08);
+
+color: var(--text);
+
+font-size: .9rem;
+```
+
+}
