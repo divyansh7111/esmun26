@@ -699,7 +699,9 @@ gap: 2rem;
 .committee-card {
 
 ```
-width: min(100%, 950px);
+width: 85%;
+
+max-width: 950px;
 
 background: rgba(255,255,255,0.05);
 
@@ -715,6 +717,7 @@ backdrop-filter: blur(10px);
 ```
 
 }
+
 
 .committee-card:hover {
 
@@ -752,7 +755,7 @@ color: var(--text);
 
 font-weight: 500;
 
-margin-bottom: 1.5rem;
+margin-bottom: 1.8rem;
 ```
 
 }
@@ -762,7 +765,7 @@ margin-bottom: 1.5rem;
 ```
 display: inline-block;
 
-margin-bottom: 1rem;
+margin-bottom: 1.4rem;
 
 padding: .35rem .8rem;
 
@@ -778,6 +781,7 @@ letter-spacing: 1px;
 ```
 
 }
+
 
 .committee-card p {
 
@@ -812,7 +816,7 @@ font-size: .9rem;
 .ip-tags {
 
 ```
-margin-top: 1.5rem;
+margin-top: 2rem;
 
 display: flex;
 
@@ -826,15 +830,19 @@ flex-wrap: wrap;
 .ip-tags span {
 
 ```
-padding: .5rem .9rem;
+padding: .75rem 1.2rem;
 
 border-radius: 999px;
 
-background: rgba(255,255,255,0.08);
+background: rgba(244,169,73,0.15);
 
-color: var(--text);
+color: var(--orange);
 
-font-size: .9rem;
+font-size: 1rem;
+
+font-weight: 600;
+
+letter-spacing: .5px;
 ```
 
 }
