@@ -680,7 +680,6 @@ Committees
 
 .committees-container {
 
-```
 width: 100%;
 
 padding: 0 8% 6rem;
@@ -692,13 +691,11 @@ flex-direction: column;
 align-items: center;
 
 gap: 2rem;
-```
 
 }
 
 .committee-card {
 
-```
 width: 85%;
 
 max-width: 950px;
@@ -714,27 +711,23 @@ padding: 2rem;
 transition: all .3s ease;
 
 backdrop-filter: blur(10px);
-```
 
 }
 
-
 .committee-card:hover {
 
-```
 transform: translateY(-6px);
 
 border-color: var(--orange);
 
 box-shadow:
     0 0 25px rgba(244,169,73,0.12);
-```
+
 
 }
 
 .committee-card h2 {
 
-```
 font-family: 'Space Grotesk', sans-serif;
 
 font-size: 2rem;
@@ -742,13 +735,11 @@ font-size: 2rem;
 color: var(--orange);
 
 margin-bottom: .4rem;
-```
 
 }
 
 .committee-card h3 {
 
-```
 font-size: 1rem;
 
 color: var(--text);
@@ -756,13 +747,11 @@ color: var(--text);
 font-weight: 500;
 
 margin-bottom: 1.8rem;
-```
 
 }
 
 .committee-label {
 
-```
 display: inline-block;
 
 margin-bottom: 1.4rem;
@@ -778,24 +767,19 @@ color: var(--orange);
 font-size: .85rem;
 
 letter-spacing: 1px;
-```
 
 }
 
-
 .committee-card p {
 
-```
 line-height: 1.9;
 
 color: var(--text);
-```
 
 }
 
 .freeze-badge {
 
-```
 margin-top: 1.5rem;
 
 display: inline-block;
@@ -809,13 +793,11 @@ background: rgba(255,255,255,0.08);
 color: var(--white);
 
 font-size: .9rem;
-```
 
 }
 
 .ip-tags {
 
-```
 margin-top: 2rem;
 
 display: flex;
@@ -823,13 +805,11 @@ display: flex;
 gap: 1rem;
 
 flex-wrap: wrap;
-```
 
 }
 
 .ip-tags span {
 
-```
 padding: .75rem 1.2rem;
 
 border-radius: 999px;
@@ -843,6 +823,5 @@ font-size: 1rem;
 font-weight: 600;
 
 letter-spacing: .5px;
-```
 
 }
