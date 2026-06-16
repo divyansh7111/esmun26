@@ -826,8 +826,19 @@ letter-spacing: .5px;
 
 }
 /* =========================
-   About Page
+About Page
 ========================= */
+
+.about-page .page-hero {
+
+min-height: 28vh;
+
+padding-top: 7rem;
+
+padding-bottom: 1rem;
+
+margin-bottom: 0;
+}
 
 .about-content {
 
@@ -837,8 +848,7 @@ max-width: 1000px;
 
 margin: 0 auto 6rem auto;
 
-padding: 0 6%;
-
+padding: 0 8%;
 }
 
 .about-content p {
@@ -850,14 +860,5 @@ line-height: 2;
 margin-bottom: 2rem;
 
 font-size: 1.05rem;
-}
-
-.about-page .page-hero {
-
-min-height: 35vh;
-
-margin-bottom: 0;
-
-padding-top: 6rem;
 
 }
