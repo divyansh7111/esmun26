@@ -825,3 +825,26 @@ font-weight: 600;
 letter-spacing: .5px;
 
 }
+/* =========================
+   About Page
+========================= */
+
+.about-content {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 0 8% 6rem;
+}
+
+.about-content p {
+
+    color: var(--text);
+
+    line-height: 1.9;
+
+    margin-bottom: 1.8rem;
+
+    font-size: 1.05rem;
+}
