@@ -853,12 +853,11 @@ padding: 0 8%;
 
 .about-content p {
 
-color: var(--text);
+    color: var(--text);
 
-line-height: 2;
+    line-height: 2;
 
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
 
-font-size: 1.05rem;
-
+    font-size: 1.1rem;
 }
