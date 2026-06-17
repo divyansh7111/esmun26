@@ -861,3 +861,20 @@ padding: 0 8%;
 
     font-size: 1.1rem;
 }
+/* =========================
+   Contact Page
+========================= */
+
+.contact-card a {
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+
+    color: var(--orange);
+}
