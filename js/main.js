@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
 // Countdown
 
 const eventDate = new Date(
-    "September 15, 2026 09:00:00"
+    "September 10, 2026 09:00:00"
 ).getTime();
 
 const countdown = setInterval(() => {
