@@ -925,6 +925,14 @@ padding: 0 8%;
 
 .social-section {
 
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
     text-align: center;
 
     padding: 1rem 0 5rem;
@@ -943,20 +951,29 @@ padding: 0 8%;
 
 .instagram-link {
 
-    display: inline-flex;
-
-    align-items: center;
+    display: flex;
 
     justify-content: center;
 
-    color: var(--orange);
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #E4405F;
 
     transition: all .3s ease;
 }
 
+.instagram-link svg {
+
+    width: 42px;
+
+    height: 42px;
+}
+
 .instagram-link:hover {
 
-    color: white;
+    color: #ff7aa2;
 
     transform: translateY(-4px) scale(1.08);
 }
