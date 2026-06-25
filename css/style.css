@@ -919,3 +919,44 @@ padding: 0 8%;
 
     color: var(--orange);
 }
+/* =========================
+   Social Section
+========================= */
+
+.social-section {
+
+    text-align: center;
+
+    padding: 1rem 0 5rem;
+}
+
+.social-section h2 {
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    color: var(--orange);
+
+    margin-bottom: 1.5rem;
+
+    font-size: 1.8rem;
+}
+
+.instagram-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--orange);
+
+    transition: all .3s ease;
+}
+
+.instagram-link:hover {
+
+    color: white;
+
+    transform: translateY(-4px) scale(1.08);
+}
