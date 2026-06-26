@@ -1181,6 +1181,10 @@ padding: 0 8%;
 
     margin-bottom:.55rem;
 
+    color:var(--orange);
+
+    font-weight:700;
+
 }
 
 .oc-card h4{
