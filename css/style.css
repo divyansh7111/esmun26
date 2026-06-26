@@ -1268,3 +1268,36 @@ max-width:80px;
 }
 
 }
+/* =========================
+   Individual Portrait Crops
+========================= */
+
+/* May require no change */
+
+/* Anvita */
+img[alt="Anvita Tata"]{
+
+    object-position: center 18%;
+
+}
+
+/* Aradhya */
+img[alt="Aradhya Bharti"]{
+
+    object-position: center 12%;
+
+}
+
+/* Aarna */
+img[alt="Aarna Jadhav"]{
+
+    object-position: center 16%;
+
+}
+
+/* Tavesa */
+img[alt="Tavesa Ghosh"]{
+
+    object-position: center 14%;
+
+}
