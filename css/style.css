@@ -977,3 +977,294 @@ padding: 0 8%;
 
     transform: translateY(-4px) scale(1.08);
 }
+/* =========================
+   ORGANISING COMMITTEE
+========================= */
+
+.oc-section{
+
+    padding:2rem 8% 5rem;
+
+}
+
+.oc-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:1.5rem;
+
+    margin-bottom:3.5rem;
+
+}
+
+.heading-line{
+
+    flex:1;
+
+    max-width:260px;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.oc-heading h2{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:2.3rem;
+
+    color:var(--orange);
+
+    white-space:nowrap;
+
+}
+
+
+
+/* =========================
+   GRID
+========================= */
+
+.oc-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,380px);
+
+    justify-content:center;
+
+    gap:2.5rem;
+
+}
+
+.secretariat-grid{
+
+    grid-template-columns:repeat(3,380px);
+
+    margin-bottom:5rem;
+
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+.oc-card{
+
+    width:380px;
+
+    height:500px;
+
+    perspective:1200px;
+
+}
+
+.oc-card-inner{
+
+    width:100%;
+
+    height:100%;
+
+    position:relative;
+
+}
+
+
+
+/* =========================
+   FRONT
+========================= */
+
+.oc-card-front{
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:1.6rem;
+
+    transition:.35s ease;
+
+}
+
+.oc-card-front:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--orange);
+
+    box-shadow:
+
+        0 0 30px rgba(244,169,73,.18);
+
+}
+
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.oc-image{
+
+    width:100%;
+
+    height:290px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+
+        0 10px 30px rgba(0,0,0,.25);
+
+    margin-bottom:1.7rem;
+
+}
+
+.oc-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.35s;
+
+}
+
+.oc-card-front:hover .oc-image img{
+
+    transform:scale(1.04);
+
+}
+
+
+
+/* =========================
+   TEXT
+========================= */
+
+.oc-card h3{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.45rem;
+
+    text-align:center;
+
+    margin-bottom:.55rem;
+
+}
+
+.oc-card h4{
+
+    color:var(--text);
+
+    font-size:.98rem;
+
+    font-weight:500;
+
+    text-align:center;
+
+    line-height:1.5;
+
+    max-width:280px;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1350px){
+
+.secretariat-grid{
+
+grid-template-columns:repeat(2,380px);
+
+}
+
+}
+
+
+
+@media(max-width:1100px){
+
+.oc-grid,
+
+.secretariat-grid{
+
+grid-template-columns:380px;
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+.oc-card{
+
+width:100%;
+
+height:480px;
+
+}
+
+.oc-grid,
+
+.secretariat-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.oc-image{
+
+height:250px;
+
+}
+
+.oc-heading h2{
+
+font-size:1.8rem;
+
+}
+
+.heading-line{
+
+max-width:80px;
+
+}
+
+}
