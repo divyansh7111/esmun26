@@ -1428,3 +1428,16 @@ img[alt="Tavesa Ghosh"]{
     transform:rotateY(180deg);
 
 }
+/* Register Page - Override */
+
+.register-options {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 2rem 5% !important;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 620px;
+}
