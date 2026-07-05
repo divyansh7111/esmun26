@@ -1449,9 +1449,9 @@ img[alt="Tavesa Ghosh"]{
 
 .brochure-section{
 
-    max-width:900px;
+    max-width:1000px;
 
-    margin:5rem auto 6rem;
+    margin:8rem auto 7rem;
 
     padding:0 6%;
 
@@ -1473,11 +1473,27 @@ img[alt="Tavesa Ghosh"]{
 
 }
 
+.brochure-heading .heading-line{
+
+    flex:1;
+
+    max-width:220px;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+}
+
 .brochure-heading h2{
 
     font-family:'Space Grotesk',sans-serif;
 
-    font-size:2rem;
+    font-size:2.6rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
 
     color:var(--orange);
 
@@ -1487,21 +1503,25 @@ img[alt="Tavesa Ghosh"]{
 
 .brochure-intro{
 
-    max-width:760px;
+    max-width:780px;
 
-    margin:0 auto 2.8rem;
+    margin:0 auto 3rem;
 
     color:var(--text);
 
     line-height:1.9;
 
-    font-size:1.05rem;
+    font-size:1.18rem;
 
 }
 
 .brochure-card{
 
-    display:inline-block;
+    display:block;
+
+    width:fit-content;
+
+    margin:0 auto;
 
     overflow:hidden;
 
@@ -1513,19 +1533,13 @@ img[alt="Tavesa Ghosh"]{
 
     backdrop-filter:blur(12px);
 
-    transition:.35s ease;
+    transition:all .35s ease;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    box-shadow:
 
-}
+        0 10px 30px rgba(0,0,0,.25);
 
-.brochure-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:var(--orange);
-
-    box-shadow:0 0 35px rgba(244,169,73,.20);
+    cursor:pointer;
 
 }
 
@@ -1533,11 +1547,29 @@ img[alt="Tavesa Ghosh"]{
 
     display:block;
 
-    width:340px;
+    width:360px;
 
     height:auto;
 
-    transition:.35s;
+    border-radius:18px;
+
+    transition:transform .35s ease;
+
+}
+
+.brochure-card:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+    border-color:var(--orange);
+
+    box-shadow:
+
+        0 0 20px rgba(244,169,73,.30),
+
+        0 0 40px rgba(244,169,73,.18),
+
+        0 20px 45px rgba(0,0,0,.35);
 
 }
 
@@ -1551,9 +1583,9 @@ img[alt="Tavesa Ghosh"]{
 
     display:inline-block;
 
-    margin-top:1.8rem;
+    margin-top:2rem;
 
-    padding:.9rem 2.5rem;
+    padding:.95rem 2.7rem;
 
     border-radius:999px;
 
@@ -1565,7 +1597,9 @@ img[alt="Tavesa Ghosh"]{
 
     font-weight:600;
 
-    transition:.3s;
+    font-size:1rem;
+
+    transition:all .3s ease;
 
 }
 
@@ -1575,20 +1609,56 @@ img[alt="Tavesa Ghosh"]{
 
     color:var(--navy);
 
+    box-shadow:
+
+        0 0 20px rgba(244,169,73,.30);
+
 }
 
 @media(max-width:768px){
 
-.brochure-heading h2{
+    .brochure-section{
 
-font-size:1.7rem;
+        margin:6rem auto 5rem;
 
-}
+    }
 
-.brochure-card img{
+    .brochure-heading{
 
-width:280px;
+        gap:.8rem;
 
-}
+    }
+
+    .brochure-heading h2{
+
+        font-size:2rem;
+
+    }
+
+    .brochure-heading .heading-line{
+
+        max-width:70px;
+
+    }
+
+    .brochure-intro{
+
+        font-size:1rem;
+
+        line-height:1.8;
+
+    }
+
+    .brochure-card img{
+
+        width:280px;
+
+    }
+
+    .brochure-button{
+
+        padding:.85rem 2.2rem;
+
+    }
 
 }
