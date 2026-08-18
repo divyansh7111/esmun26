@@ -1662,3 +1662,200 @@ img[alt="Tavesa Ghosh"]{
     }
 
 }
+/* =========================
+   Registration Urgency
+========================= */
+
+.registration-alert{
+
+    width:100%;
+
+    min-height:62px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.8rem;
+
+    padding:1rem 6%;
+
+    background:rgba(255,255,255,.035);
+
+    border-top:1px solid rgba(244,169,73,.16);
+
+    border-bottom:1px solid rgba(244,169,73,.16);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    transition:all .3s ease;
+
+}
+
+
+/* =========================
+   Alert Text
+========================= */
+
+.alert-text{
+
+    color:var(--orange);
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.98rem;
+
+    font-weight:600;
+
+    letter-spacing:.4px;
+
+    text-align:center;
+
+    transition:all .3s ease;
+
+}
+
+
+/* =========================
+   Radiant Alert Dot
+========================= */
+
+.alert-dot{
+
+    width:8px;
+
+    height:8px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:var(--orange);
+
+    box-shadow:
+
+        0 0 5px rgba(244,169,73,.9),
+
+        0 0 12px rgba(244,169,73,.75),
+
+        0 0 22px rgba(244,169,73,.45);
+
+    animation:alertPulse 1.8s ease-in-out infinite;
+
+}
+
+
+/* =========================
+   Hover
+========================= */
+
+.registration-alert:hover{
+
+    background:rgba(244,169,73,.055);
+
+    border-color:rgba(244,169,73,.32);
+
+    box-shadow:
+
+        0 0 20px rgba(244,169,73,.07);
+
+}
+
+.registration-alert:hover .alert-text{
+
+    letter-spacing:.55px;
+
+}
+
+.registration-alert:hover .alert-dot{
+
+    box-shadow:
+
+        0 0 7px rgba(244,169,73,1),
+
+        0 0 16px rgba(244,169,73,.9),
+
+        0 0 30px rgba(244,169,73,.55);
+
+}
+
+
+/* =========================
+   Pulsing Radiance
+========================= */
+
+@keyframes alertPulse{
+
+    0%,
+    100%{
+
+        transform:scale(1);
+
+        opacity:.85;
+
+        box-shadow:
+
+            0 0 5px rgba(244,169,73,.9),
+
+            0 0 12px rgba(244,169,73,.75),
+
+            0 0 22px rgba(244,169,73,.45);
+
+    }
+
+    50%{
+
+        transform:scale(1.45);
+
+        opacity:1;
+
+        box-shadow:
+
+            0 0 7px rgba(244,169,73,1),
+
+            0 0 18px rgba(244,169,73,.95),
+
+            0 0 32px rgba(244,169,73,.65);
+
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media(max-width:600px){
+
+    .registration-alert{
+
+        min-height:56px;
+
+        padding:1rem 5%;
+
+        gap:.65rem;
+
+    }
+
+    .alert-text{
+
+        font-size:.88rem;
+
+        line-height:1.5;
+
+    }
+
+    .alert-dot{
+
+        width:7px;
+
+        height:7px;
+
+    }
+
+}
