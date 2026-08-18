@@ -1682,6 +1682,8 @@ img[alt="Tavesa Ghosh"]{
 
     padding:1rem 6%;
 
+    margin-top:80px;
+
     background:rgba(255,255,255,.035);
 
     border-top:1px solid rgba(244,169,73,.16);
@@ -1693,6 +1695,10 @@ img[alt="Tavesa Ghosh"]{
     -webkit-backdrop-filter:blur(10px);
 
     transition:all .3s ease;
+
+    position:relative;
+
+    z-index:2;
 
 }
 
@@ -1835,6 +1841,8 @@ img[alt="Tavesa Ghosh"]{
     .registration-alert{
 
         min-height:56px;
+
+        margin-top:70px;
 
         padding:1rem 5%;
 
